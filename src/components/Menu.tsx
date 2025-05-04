@@ -7,13 +7,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const MenuButton = styled.button`
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 40;
   padding: 0.5rem;
   border-radius: 9999px;
   transition: background-color 0.2s;
+  z-index: 40;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
@@ -56,7 +53,8 @@ const MenuContent = styled.div`
 `;
 
 const CloseButton = styled(MenuButton)`
-  left: auto;
+  position: absolute;
+  top: 1rem;
   right: 1rem;
 `;
 
@@ -73,7 +71,7 @@ const MenuItem = styled.div<{ isActive?: boolean }>`
     font-size: 1.25rem;
     transition: color 0.2s;
     font-weight: 500;
-    color: ${(props) => (props.isActive ? "blue" : "inherit")};
+    color: ${(props) => (props.isActive ? "#4b5563" : "inherit")};
 
     &:hover {
       color: #4b5563;
