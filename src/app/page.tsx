@@ -1,5 +1,7 @@
 "use client";
 
+import ThreeScene from "@/components/ThreeScene";
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -19,6 +21,10 @@ export default function Home() {
             Your browser does not support the video tag.
           </video>
         </div>
+        <div className="w-full relative h-[3000px]">
+          <ThreeScene />
+        </div>
+        <div className="w-full h-screen"></div>
       </main>
     </div>
   );
