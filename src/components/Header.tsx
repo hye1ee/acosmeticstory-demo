@@ -30,15 +30,15 @@ export default function Header() {
           className="p-2 rounded-lg transition-colors hover:bg-black/5 cursor-pointer z-40"
         >
           {isOpen ? (
-            <X size={24} strokeWidth={1.2} />
+            <X size={30} strokeWidth={1} />
           ) : (
-            <MenuIcon size={24} strokeWidth={1.2} />
+            <MenuIcon size={30} strokeWidth={1} />
           )}
         </button>
 
-        <div>
+        <div className="absolute left-1/2 -translate-x-1/2">
           <Link href="/" className="no-underline">
-            <div className="text-2xl font-normal cursor-pointer transition-opacity hover:opacity-70">
+            <div className="text-4xl font-light cursor-pointer transition-opacity hover:opacity-70">
               Acosmeticstory
             </div>
           </Link>
@@ -58,7 +58,7 @@ export default function Header() {
                   <Link
                     href={item.path}
                     onClick={handleMenuClick}
-                    className={`block text-lg text-gray-800 transition-colors ${
+                    className={`block text-md text-gray-800 transition-colors ${
                       pathname === item.path
                         ? "text-gray-600"
                         : "text-inherit hover:text-gray-600"
