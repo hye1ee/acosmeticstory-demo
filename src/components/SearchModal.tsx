@@ -25,7 +25,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
         <div className="relative">
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="검색"
             className="w-full p-4 text-lg border-b border-gray-200 focus:outline-none focus:border-black"
             autoFocus
           />
