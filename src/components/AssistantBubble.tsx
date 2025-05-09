@@ -28,11 +28,11 @@ export default function AssistantBubble() {
           </div>
           <button
             onClick={() => setIsExpanded(false)}
-            className="bg-black rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-200 cursor-pointer"
+            className="bg-black rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200 cursor-pointer"
             aria-label="Open assistant"
           >
             <Sparkles
-              size={24}
+              size={20}
               strokeWidth={1}
               fill="white"
               className="text-white group-hover:animate-spin"
