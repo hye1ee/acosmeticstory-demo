@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu as MenuIcon, X, Search, BookOpen, Grid2X2 } from "lucide-react";
+import { Menu as MenuIcon, X, Search, Grid2X2 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import SearchModal from "./SearchModal";
 
